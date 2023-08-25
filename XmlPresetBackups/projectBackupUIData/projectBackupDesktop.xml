@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptImage" id="Background" x="0.0" y="0.0" width="400.0"
+             height="250.0" fileName="{PROJECT_FOLDER}Background.png" alpha="0.8"
+             locked="1">
+    <Component type="ScriptSlider" id="Knob1" x="30.0" y="50.0" width="370.0"
+               height="50.0" parentComponent="Background" processorId="Waveform Generator1"
+               parameterId="WaveForm1" text="WaveForm 1" max="9.0" stepSize="1.0"
+               defaultValue="2.0" locked="1"/>
+    <Component type="ScriptSlider" id="Knob2" x="30.0" y="110.0" width="370.0"
+               height="50.0" text="WaveForm 2" processorId="Waveform Generator1"
+               parameterId="WaveForm2" max="9.0" stepSize="1.0" parentComponent="Background"
+               defaultValue="3.0" locked="1"/>
+    <Component type="ScriptSlider" id="Knob3" x="30.0" y="170.0" width="370.0"
+               height="50.0" processorId="Waveform Generator1" parameterId="Mix"
+               text="Mix" parentComponent="Background" defaultValue="0.5" locked="1"/>
+    <Component type="ScriptImage" id="Envelope" x="0.0" y="0.0" parentComponent="Background"
+               width="400.0" height="250.0" fileName="{PROJECT_FOLDER}Background.png"
+               locked="1" visible="0">
+      <Component type="ScriptSlider" id="Knob4" x="30.0" y="60.0" stepSize="1.0"
+                 min="-4.0" max="4.0" text="Octave 1" processorId="Waveform Generator1"
+                 parameterId="OctaveTranspose1" middlePosition="0.0" parentComponent="Envelope"
+                 locked="1"/>
+      <Component type="ScriptSlider" id="Knob5" x="30.0" y="110.0" middlePosition="0.0"
+                 min="-100.0" text="Detune 1" processorId="Waveform Generator1"
+                 parameterId="Detune1" parentComponent="Envelope" locked="1" max="100.0"/>
+      <Component type="ScriptSlider" id="Knob6" x="240.0" y="60.0" middlePosition="0.0"
+                 stepSize="1.0" min="-4.0" max="4.0" text="Octave 2" processorId="Waveform Generator1"
+                 parameterId="OctaveTranspose2" parentComponent="Envelope" locked="1"/>
+      <Component type="ScriptSlider" id="Knob7" x="240.0" y="110.0" middlePosition="0.0"
+                 min="-100.0" text="Detune 2" processorId="Waveform Generator1"
+                 parameterId="Detune2" parentComponent="Envelope" locked="1" max="100.0"/>
+      <Component type="ScriptSlider" id="Knob8" x="30.0" y="170.0" style="Horizontal"
+                 width="340.0" height="20.0" defaultValue="5.0" min="5.0" max="300.0"
+                 dragDirection="Horizontal" processorId="DefaultEnvelope1" parameterId="Attack"
+                 parentComponent="Envelope" middlePosition="150.0" stepSize="0.1"
+                 locked="1"/>
+      <Component type="ScriptSlider" id="Knob9" x="30.0" y="210.0" parentComponent="Envelope"
+                 width="340.0" height="20.0" style="Horizontal" dragDirection="Horizontal"
+                 max="10000.0" defaultValue="10.0" processorId="DefaultEnvelope1"
+                 parameterId="Release" middlePosition="2000.0" stepSize="0.1"
+                 locked="1"/>
+      <Component type="ScriptLabel" id="Label1" x="20.0" y="40.0" parentComponent="Envelope"
+                 text="Osc 1" locked="1" editable="0"/>
+      <Component type="ScriptLabel" id="Label2" x="250.0" y="40.0" text="Osc 2"
+                 parentComponent="Envelope" locked="1" editable="0"/>
+      <Component type="ScriptLabel" id="Label3" x="170.0" y="150.0" width="60.0"
+                 height="20.0" text="Attack" parentComponent="Envelope" locked="1"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label4" x="160.0" y="190.0" parentComponent="Envelope"
+                 width="80.0" height="20.0" text="Release" locked="1" editable="0"/>
+    </Component>
+    <Component type="ScriptFloatingTile" id="Presets" x="0.0" y="30.0" width="400.0"
+               height="200.0" ContentType="PresetBrowser" bgColour="4143972352"
+               itemColour="4287692721" itemColour2="0" Data="{&#10;  &quot;ShowSaveButton&quot;: true,&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#10;  &quot;ShowFolderButton&quot;: true,&#10;  &quot;ShowNotes&quot;: true,&#10;  &quot;ShowEditButtons&quot;: true,&#10;  &quot;EditButtonOffset&quot;: 10,&#10;  &quot;ShowAddButton&quot;: true,&#10;  &quot;ShowRenameButton&quot;: true,&#10;  &quot;ShowDeleteButton&quot;: true,&#10;  &quot;ShowFavoriteIcon&quot;: true,&#10;  &quot;ButtonsInsideBorder&quot;: false,&#10;  &quot;NumColumns&quot;: 3,&#10;  &quot;ColumnWidthRatio&quot;: [&#10;    0.3333333333333333,&#10;    0.3333333333333333,&#10;    0.3333333333333333&#10;  ],&#10;  &quot;ListAreaOffset&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;ColumnRowPadding&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;SearchBarBounds&quot;: [],&#10;  &quot;MoreButtonBounds&quot;: [],&#10;  &quot;SaveButtonBounds&quot;: [],&#10;  &quot;FavoriteButtonBounds&quot;: []&#10;}"
+               FontSize="10.0" parentComponent="Background" locked="1" visible="0"/>
+    <Component type="ScriptLabel" id="Titel" x="0.0" y="0.0" width="400.0" height="30.0"
+               text="The Simple Synth" fontName="007 GoldenEye" fontSize="15.0"
+               locked="1" editable="0" parentComponent="Background"/>
+    <Component type="ScriptLabel" id="Credits" x="0.0" y="20.0" width="400.0"
+               height="20.0" parentComponent="Background" editable="0" multiline="1"
+               text="Jean Haffner - Copyright (c) 2023" fontSize="8.0" fontName="Bookman Old Style"
+               locked="1" textColour="4285164138"/>
+    <Component type="ScriptButton" id="Button1" x="0.0" y="0.0" parentComponent="Background"
+               width="80.0" height="20.0" text="Presets" saveInPreset="0" setValueOnClick="1"
+               enableMidiLearn="0" locked="1"/>
+    <Component type="ScriptButton" id="Button2" x="320.0" y="0.0" parentComponent="Background"
+               width="80.0" height="20.0" text="Controls" enableMidiLearn="0"
+               setValueOnClick="1" saveInPreset="0" locked="1"/>
+  </Component>
+</ContentProperties>

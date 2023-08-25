@@ -1,0 +1,35 @@
+ Copyright 2023 Jean Haffner
+
+ "The Simple Synth" is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ "The Simple Synth" is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ ---
+ GPL does not mean Public Domain.
+ You will keep the copyright of any code you write and can make modifications
+ as you wish, you just can't prevent that other people might do the same.
+ What they will not be able to do is to remove you as an author and claim that
+ they wrote everything themselves (or make a proprietary derivative),
+ because that would be a violation of the GPL license.
+ ---
+
+ Further Information:
+
+ "The Simple Synth" (aka. "TSS") inherits it's license from "HISE".
+ You need "HISE" in order to build or modify "The Simple Synth"!
+
+ Github: <https://github.com/christophhart/HISE>
+ Website: <https://hise.dev>
+
+ You can get a precompiled version of "The Simple Synth" from my Ko-fi page.
+ However, I do charge a small fee / donation for this service.
+
+ Ko-fi: <https://ko-fi.com/s/06748a4cf0>
+
+ Whichever way you choose: Keep it simple - have fun!
